@@ -3,12 +3,10 @@
   "version": "1.0.0",
   "description": "My learning projects from Kodilla Bootcamp: Javascript",
   "main": "script.js",
-  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "babel script.js --watch --out-file script-compiled.js"
+    "start": "babel --plugins transform-react-jsx script.js --watch --out-file script-compiled.js"
   },
-
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -17,6 +15,7 @@
     "babel-preset-latest": "^6.24.1"
   },
   "dependencies": {
+    "babel-plugin-transform-react-jsx": "^6.24.1",
     "http-server": "^0.11.1"
   }
 }
